@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -151,6 +151,7 @@ header .logo {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -300,7 +301,8 @@ header .logo {
     margin-bottom: 20px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     width: 100%;
     padding: 15px;
     border: none;
@@ -350,7 +352,7 @@ footer .footer-left h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
 
-} 
+}
 
 footer .footer-left p {
     font-size: 1rem;
@@ -386,4 +388,78 @@ footer .footer-right .social-icons a:hover {
     font-size: 0.9rem;
     color: #555;
     text-align: center;
+}
+
+@media (max-width: 360px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        min-width: 100%
+    }
+
+    .about-image img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item i {
+        font-size: 2.5rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact form {
+        padding: 0 10px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    footer .footer-left h3 {
+        font: size 1.5rem;
+        ;
+    }
+
+    footer .footer-right .social-icons a {
+        font-size: 1.3rem;
+    }
 }

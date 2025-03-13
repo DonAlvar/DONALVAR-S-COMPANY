@@ -6,3 +6,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+console.log("website script loaded successfully")
